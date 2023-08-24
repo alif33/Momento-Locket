@@ -1,5 +1,5 @@
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-white">
+      <body className="min-h-screen flex flex-col bg-[#FBFBFB]">
         <Header/>
         {children}
         <Footer/>
