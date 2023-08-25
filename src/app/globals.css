@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'TRPro';
+  src: url('/fonts/TrajanPro-Regular.ttf') format('truetype');
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,4 +30,26 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-today{
+  background-image: url('/img/bg-today.png');
+}
+.trajan-font {
+  font-family: TRPro;
+}
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+.input {
+  @apply border border-gray-300 text-gray-900 sm:text-sm rounded-md block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ;
+}
+.btn-submit {
+  @apply rounded-3xl bg-[#996D01] text-base font-normal text-white py-2 px-4 mx-auto;
+}
+.text-gold {
+  @apply trajan-font text-[#996D01];
+}
+.text-gradient {
+  @apply trajan-font bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 bg-clip-text text-transparent;
 }
