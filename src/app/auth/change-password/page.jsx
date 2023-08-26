@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function UpdatePassword() {
+    
     return(
         <div className="flex-1">
              <div className="w-[450px] mx-auto shadow-md mt-8 bg-white rounded-lg">

@@ -9,53 +9,45 @@ export default function Address() {
             <div className="w-10/12 flex flex-row gap-7 mx-auto">
                 <Sidebar/>
                 <div className="basis-9/12 bg-white shadow rounded px-3 py-3">
-                    <h1 className="uppercase text-[#996D01] my-3">Address</h1>
+                    <h1 className="trajan-font text-2xl font-normal uppercase text-[#996D01] my-3">Address</h1>
                    <h6 className="text-[#BEB8A4]">Billing Adress</h6>
                    <h5 className="text-[#0FAFE9]">Edit</h5>
-                   <form className="w-full flex flex-col gap-3">
-                        <div className="flex gap-3">
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="First Name"
-                            />
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Last Name"
-                            />
-                        </div>
+                   <form className="grid grid-cols-2 gap-3 mt-4">
                         <input
-                            className="w-full border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            className="input"
+                            placeholder="First Name"
+                        />
+                        <input
+                            className="input"
+                            placeholder="Last Name"
+                        />
+                        <input 
+                            className="input col-span-2"
                             placeholder="Address"
                         />
-                        <div className="flex gap-3">
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Apartment, suite, etc. (optional)"
-                            />
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Phone"
-                            />
-                        </div>
-                        <div className="flex gap-3">
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="City"
-                            />
-                            <select placeholder="Country" className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option>BD</option>
-                                <option>IN</option>
-                            </select>
-                        </div>
-                        <div className="flex gap-3">
-                            <select placeholder="State" className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option></option>
-                            </select>
-                            <input
-                                className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="ZIP Code"
-                            />
-                        </div>
+                        <input
+                            className="input"
+                            placeholder="Apartment, suite, etc. (optional)"
+                        />
+                        <input
+                            className="input"
+                            placeholder="Phone"
+                        />
+                        <input
+                            className="input"
+                            placeholder="City"
+                        />
+                        <select placeholder="Country" className="input">
+                            <option>BD</option>
+                            <option>IN</option>
+                        </select>
+                        <select placeholder="State" className="input">
+                            <option></option>
+                        </select>
+                        <input
+                            className="input"
+                            placeholder="ZIP Code"
+                        />
                    </form>
                 </div>
             </div>

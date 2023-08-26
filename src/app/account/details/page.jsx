@@ -9,35 +9,33 @@ export default function Details() {
             <div className="w-10/12 flex flex-row gap-7 mx-auto">
                 <Sidebar/>
                 <div className="basis-9/12 bg-white shadow rounded px-3 py-3">
-                    <h1 className="uppercase text-[#996D01] my-3">Account Details</h1>
-                    <form className="w-full flex flex-col gap-3">
-                            <div className="flex gap-3">
-                                <input
-                                    className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="First Name"
-                                />
-                                <input
-                                    className="basis-1/2 border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Last Name"
-                                />
-                            </div>
-                            <input
-                                className="w-full border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Email"
-                            />
-                            <input
-                                className="w-full border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Phone"
-                            />
-                            <h1 className="text-[#996D01] uppercase">Change Password</h1>
-                            <input
-                                className="w-full border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Password"
-                            />
-                            <input
-                                className="w-full border border-gray-300 text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Confirm Password"
-                            />
+                    <h1 className="trajan-font text-2xl font-normal uppercase text-[#996D01] my-3">Account Details</h1>
+                    <form className="grid grid-cols-2 gap-3">
+                        <input
+                            className="input"
+                            placeholder="First Name"
+                        />
+                        <input
+                            className="input"
+                            placeholder="Last Name"
+                        />
+                        <input
+                            className="input col-span-2"
+                            placeholder="Email"
+                        />
+                        <input
+                            className="input col-span-2"
+                            placeholder="Phone"
+                        />
+                        <h1 className="trajan-font text-2xl font-normal text-[#996D01] uppercase">Change Password</h1>
+                        <input
+                            className="input col-span-2"
+                            placeholder="Password"
+                        />
+                        <input
+                            className="input col-span-2"
+                            placeholder="Confirm Password"
+                        />
                     </form>
                 </div>
             </div>

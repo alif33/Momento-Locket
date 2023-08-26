@@ -45,3 +45,26 @@ export const faqs = [
         border: false
     }       
 ];
+
+export const links = [
+    {
+        name: "Dashboard",
+        uri: "/account"
+    },
+    {
+        name: "Orders",
+        uri: "/account/orders"
+    },
+    {
+        name: "Address",
+        uri: "/account/address"
+    },
+    {
+        name: "Account details",
+        uri: "/account/details"
+    },
+    {
+        name: "Log out",
+        uri: "/"
+    },
+];
