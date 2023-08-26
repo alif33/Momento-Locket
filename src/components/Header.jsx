@@ -13,6 +13,8 @@ const Header = () =>{
                 <ul className="flex flex-row gap-5">
                     <li><Link href="/">About Us</Link></li>
                     <li><Link href="/">Urns</Link></li>
+                    <li><Image width={28} height={30} src={"/icons/User.svg"} alt="man icon"/></li>
+                    <li><Image width={25} height={33} src={"/icons/Bag.svg"} alt="bag icon"/></li>
                 </ul>
             </div>
         </div>

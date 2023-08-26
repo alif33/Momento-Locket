@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function SignIn() {
+    
     return(
         <div className="flex-1">
              <div className="w-[450px] mx-auto shadow-md mt-20 bg-white rounded-lg">
