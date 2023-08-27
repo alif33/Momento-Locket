@@ -38,6 +38,9 @@ body {
 .bg-locket{
   background-image: url('/img/digital-locket.png');
 }
+.bg-pearl{
+  background-image: url('/img/ghry.png');
+}
 .bg-today{
   background-image: url('/img/bg-today.png');
 }
