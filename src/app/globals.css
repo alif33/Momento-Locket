@@ -33,7 +33,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .bg-hero{
-  background-image: url('/img/hero.png');
+  background-image: url('/img/hero.svg');
 }
 .bg-locket{
   background-image: url('/img/digital-locket.png');

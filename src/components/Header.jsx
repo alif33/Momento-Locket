@@ -12,8 +12,8 @@ const Header = () =>{
             <div className="flex items-center">
                 <ul className="flex flex-row gap-5">
                     <li><Link href="/about-us">About Us</Link></li>
-                    <li><Link href="/account">Urns</Link></li>
-                    <li><Link href="/"><Image width={28} height={30} src={"/icons/User.svg"} alt="man icon"/></Link></li>
+                    <li><Link href="/#products">Urns</Link></li>
+                    <li><Link href="/auth/signup"><Image width={28} height={30} src={"/icons/User.svg"} alt="man icon"/></Link></li>
                     <li><Link href="/"><Image width={25} height={33} src={"/icons/Bag.svg"} alt="bag icon"/></Link></li>
                 </ul>
             </div>
