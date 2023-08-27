@@ -5,15 +5,17 @@ import Reviews from '@/components/home/Reviews'
 import Work from '@/components/home/Work'
 import Products from '@/components/home/Products'
 import Hero from '@/components/home/Hero'
+import Pearl from '@/components/home/Pearl'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
+      <Pearl/>
       <Work/>
       <OrderToday/>
-      <Reviews/>
       <Products/>
+      <Reviews/>
       <Faq/>
     </div>
   )
