@@ -1,6 +1,5 @@
-import BreadCrumb from "@/components/BreadCrumb";
 import Image from "next/image";
-import Link from "next/link";
+import BreadCrumb from "@/components/BreadCrumb";
 
 export default function Address() {
     return(
