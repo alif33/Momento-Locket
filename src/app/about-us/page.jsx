@@ -5,33 +5,40 @@ import Link from "next/link";
 export default function Address() {
     return(
         <div className="flex-1">
-            <BreadCrumb/>
-            <div className="w-1/2 mx-auto">
-                <div className="flex justify-between gap-5">
-                    <div className="block w-1/2">
+            <BreadCrumb
+                page={"About Us"}
+                link={"/about-us"}
+            />
+            <div className=" w-7/12 mx-auto">
+                <div className="grid grid-cols-12 gap-9 py-7">
+                    <div className="col-span-7">
                         <Image
                             width={436}
-                            height={523}
+                            height={623}
                             src="/img/chi-huynh.jpg"
-                            className=" w-full"
+                            className="w-full"
                             alt=""
                         />
                     </div>
-                    <div>
-                        <h6>Momento was invented by Chi Huynh</h6>
-                        <p>an award-winning jewelry designer with over 25 years of experience in the business of jewelry ideas and creations. He has won several awards in the jewelry industry and many other accolades in other fields of invention and art.</p>
-                        <ul>
-                            <li>JCK Jeweler Choice Award</li>
-                            <li>In-Store Magazine Award</li>
-                            <li>Culture Pearl Association of America’s Visionary Award</li>
-                            <li>JDF Momento Collection is a subsidiary of Galatea Jewelry corp.</li>
-                        </ul>
+                    <div className="col-span-5">
+                        <div className="flex flex-col gap-5">
+                            <h6 className="text-[#747067] text-2xl font-semibold">Momento was invented by Chi Huynh</h6>
+                            <p className="text-[#747067] font-light text-lg">an award-winning jewelry designer with over 25 years of experience in the business of jewelry ideas and creations. He has won several awards in the jewelry industry and many other accolades in other fields of invention and art.</p>
+                            <ul className="list-disc text-[#747067] text-base font-semibold pl-5">
+                                <li>JCK Jeweler Choice Award</li>
+                                <li>In-Store Magazine Award</li>
+                                <li>Culture Pearl Association of America’s Visionary Award</li>
+                                <li>JDF Momento Collection is a subsidiary of Galatea Jewelry corp.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <h1 className=" text-center text-2xl py-5">Chi Huynh’s Story</h1>
+
+                <h1 className="text-gradient text-center text-4xl py-5">Chi Huynh’s Story</h1>
                 <Image
                     width={969}
                     height={523}
+                    className="pb-7"
                     src="/img/story.png"
                     alt=""
                 />
