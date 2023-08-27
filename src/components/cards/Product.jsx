@@ -1,6 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Circle from '@/components/svg/Circle';
 
 const Product = () =>{
     return(
@@ -20,10 +21,7 @@ const Product = () =>{
                     <button className="bg-[#74706714] px-3 py-2 rounded-full">White Gold</button>
                 </div>
                 <span className="mx-auto my-5">
-                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="21" fill="none" stroke="#747067" stroke-width="1" />
-                        <circle cx="25" cy="25" r="20" fill="#74706726" />
-                    </svg>
+                    <Circle/>
                 </span>
                 <button className="btn-submit">Add to Bag</button>
             </div>

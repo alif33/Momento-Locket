@@ -32,6 +32,12 @@ body {
     rgb(var(--background-start-rgb));
     font-family: 'Montserrat', sans-serif;
 }
+.bg-hero{
+  background-image: url('/img/hero.png');
+}
+.bg-locket{
+  background-image: url('/img/digital-locket.png');
+}
 .bg-today{
   background-image: url('/img/bg-today.png');
 }
@@ -58,4 +64,47 @@ body {
 }
 .link-active {
   @apply text-base font-semibold text-[#996D01];
+}
+
+.pulse {
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  position: relative;
+}
+
+.pulse:before,
+.pulse:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: #ffffff 2px solid;
+    border-radius: 100%;
+    animation: pulse 4s linear infinite;
+}
+
+.pulse:after{
+    animation-delay: 2s;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(2);
+    }
+    30%{
+        transform: scale(2.4);
+        opacity: 1;
+        border: #ffffff 3px solid;
+    }
+    100%{
+        transform: scale(4);
+        opacity: 0;
+        border: #ffffff 4px solid;
+    }
 }
