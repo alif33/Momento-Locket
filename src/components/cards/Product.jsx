@@ -5,7 +5,7 @@ import Circle from '@/components/svg/Circle';
 
 const Product = () =>{
     return(
-        <Link href="/p" className="h-[714px] w-[381px] bg-white shadow">
+        <Link href="/p" className="h-[680px] w-[381px] bg-white shadow">
              <Image
                 height={436}
                 width={381}

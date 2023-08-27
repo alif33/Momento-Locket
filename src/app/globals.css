@@ -44,6 +44,9 @@ body {
 .bg-today{
   background-image: url('/img/bg-today.png');
 }
+.bg-product{
+  background-image: url('/img/product-bg.svg');
+}
 .trajan-font {
   font-family: TRPro;
 }
