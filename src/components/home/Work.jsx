@@ -3,8 +3,8 @@ import React from 'react';
 
 const Work = () =>{
     return(
-        <div className="">
-            <h1 className="text-gradient font-normal text-4xl text-center text-2xl py-5">How Does It Work</h1>
+        <div className="py-20">
+            <h1 className="text-gradient font-normal text-4xl text-center text-2xl pb-5">How Does It Work</h1>
             <div className="w-8/12 mx-auto grid grid-cols-12 justify-items-stretch">
                 <div className="col-span-7">
                     <Image

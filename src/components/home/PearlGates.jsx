@@ -3,7 +3,7 @@ import React from 'react';
 
 const PearlGates = () =>{
     return(
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto mt-20">
             <div className="grid grid-cols-12 gap-7">
                 <div className="col-span-5">
                     <Image

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Pearl = () =>{
     return(
-    <div className="">
+    <div className="pt-10">
         <div className="w-10/12 mx-auto mb-[-80px]">
             <h1 className="text-4xl text-center text-gradient font-normal py-3">{"Your Love One\'s Memories Encased in a Pearl"}</h1>
             <div className="grid grid-cols-12 justify-items-stretch gap-4 pt-7">
