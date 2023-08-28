@@ -10,9 +10,10 @@ const Technology = () =>{
                         height={900}
                         width={576}
                         src="/img/technology.svg"
+                        alt="technology background"
                     />
                 </div>
-                <div className="col-span-8 my-20">
+                <div className="col-span-8 my-10">
                     <h1 className="text-gradient text-4xl trajan-font py-5">Momento Urn Technology</h1>
                    <div className="grid grid-cols-12 gap-7">
                         <div className="col-span-6">
@@ -24,24 +25,22 @@ const Technology = () =>{
                             <div className="flex gap-3">
                                 <div className="flex flex-col">
                                     <Image
-                                        height={100}
+                                        height={70}
                                         width={250}
                                         src="/img/app-store.png"
                                         alt="app store icon"
                                     />
                                     <Image
-                                        height={130}
+                                        height={70}
                                         width={300}
                                         src="/img/google-play.png"
                                         alt="google play icon"
                                     />
                                 </div>
-                               
                             </div>
                         </div>
                    </div>
                 </div>
-
             </div>
         </div>
     )
