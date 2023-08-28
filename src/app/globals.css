@@ -8,30 +8,10 @@
   src: url('/fonts/TrajanPro-Regular.ttf') format('truetype');
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .bg-hero{
   background-image: url('/img/hero.svg');
 }
@@ -74,11 +54,6 @@ body {
 
 .pulse {
   border-radius: 100%;
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  background-color: transparent;
-  position: relative;
 }
 
 .pulse:before,

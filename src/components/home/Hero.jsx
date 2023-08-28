@@ -4,7 +4,7 @@ import React from 'react';
 const Hero = () =>{
     return(
         <div className="bg-cover h-fit bg-hero flex flex-col justify-between">
-            <div className="pulse">
+            <div className="pulse m-0 m-auto w-[150px] h-[150px] bg-transparent relative">
                 <div className="absolute">
                     <Image
                         width={556}
