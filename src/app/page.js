@@ -7,6 +7,7 @@ import Products from '@/components/home/Products'
 import Hero from '@/components/home/Hero'
 import Pearl from '@/components/home/Pearl'
 import PearlGates from '@/components/home/PearlGates'
+import Technology from '@/components/home/Technology'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Pearl/>
       <Work/>
+      <Technology/>
       <OrderToday/>
       <PearlGates/>
       <Products/>
