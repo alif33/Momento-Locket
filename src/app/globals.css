@@ -74,27 +74,28 @@ body {
     animation-delay: 2s;
 }
 
+
+@keyframes pulse {
+  0%{
+      transform: scale(2);
+  }
+  30%{
+      transform: scale(2.4);
+      opacity: 1;
+      border: #DBDBDB 3px solid;
+  }
+  100%{
+      transform: scale(4);
+      opacity: 0;
+      border: #DBDBDB 4px solid;
+  }
+}
+
 .move-image{
   position: absolute;
   bottom: -18%;
   animation: moveUp 5s linear;
   z-index: 999;
-}
-
-@keyframes pulse {
-    0%{
-        transform: scale(2);
-    }
-    30%{
-        transform: scale(2.4);
-        opacity: 1;
-        border: #DBDBDB 3px solid;
-    }
-    100%{
-        transform: scale(4);
-        opacity: 0;
-        border: #DBDBDB 4px solid;
-    }
 }
 
 @keyframes moveUp {
@@ -105,3 +106,17 @@ body {
     transform: translateY(0); /* Move to the top of the container */
   }
 }
+
+.shake:hover {
+  animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+/* Apply the shaking effect to the button on hover */
+

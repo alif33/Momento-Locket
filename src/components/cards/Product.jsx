@@ -3,13 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Circle from '@/components/svg/Circle';
 
-const Product = () =>{
+const Product = ({ img }) =>{
     return(
         <Link href="/p" className="h-[680px] w-[381px] bg-white shadow">
              <Image
                 height={436}
                 width={381}
-                src="/img/product.png"
+                src={img? img: "/img/product.png"}
                 alt="product image"
             />
             <div className=" flex flex-col justify-center pt-5">

@@ -7,7 +7,10 @@ const OrderToday = () =>{
                 <h1 className="trajan-font text-center text-[#AC8118] text-5xl font-normal my-3">Order Yours</h1>
                 <h1 className="trajan-font text-center text-[#AC8118] text-5xl font-normal">Today</h1>
                 <div className="w-[120px] mx-auto my-3">
-                    <button className=" bg-[#996D01] px-5 py-3 rounded-full text-white">Buy Now</button>
+                    {/* <button className=" bg-[#996D01] px-5 py-3 rounded-full text-white"> */}
+                    <button className="group bg-[#996D01] px-5 py-3 rounded-full hover:bg-[#AC8118] text-white font-bold py-2 px-4 rounded shake">
+                        Buy Now
+                    </button>
                 </div>
             </div>
         </div>

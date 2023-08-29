@@ -1,5 +1,6 @@
 import React from "react";
 import { reviews } from "@/lib/data";
+import Card from "../cards/Review";
 
 const Reviews = () =>{
  
@@ -11,6 +12,7 @@ const Reviews = () =>{
                     reviews.map((item, index)=>(
                         <div key={index}>
                             <h5 className=" text-[#747067] inter-font font-light text-2xl">{item.title}</h5>
+                            <Card img={item.img}/>
                         </div>
                     ))
                 }

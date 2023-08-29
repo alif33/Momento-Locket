@@ -1,12 +1,15 @@
 export const reviews = [
     { 
-        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“" 
+        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“",
+        img: "/img/review_1.png" 
     },
     { 
-        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“" 
+        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“",
+        img: "/img/review_2.png"  
     },
     { 
-        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“" 
+        title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“",
+        img: "/img/review_3.png"  
     }
 ]; 
 
