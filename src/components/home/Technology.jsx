@@ -7,9 +7,9 @@ const Technology = () =>{
             <div className="grid grid-cols-12">
                 <div className="col-span-4">
                     <Image
-                        height={900}
+                        height={700}
                         width={576}
-                        src="/img/technology.svg"
+                        src="/img/technology.png"
                         alt="technology background"
                     />
                 </div>

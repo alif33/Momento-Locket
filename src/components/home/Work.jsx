@@ -18,7 +18,7 @@ const Work = () =>{
                     <div className="flex flex-col items-center gap-12 mt-20">
                         <h2 className="trajan-font text-[#747067] font-normal text-2xl w-full">{"A collection of life’s best moments"}</h2>
                         <p className="text-[#747067] text-lg font-medium">Start a digital photo album by selecting photos from Google photos, ICloud photos or create one from scratch to bring photos from your phone into your Momento Urn.</p>
-                        <button className="bg-[#996D01] px-4 py-3 rounded-full text-white">Shop Now</button>
+                        <button className="btn-shake">Shop Now</button>
                     </div>
                 </div>
             </div>

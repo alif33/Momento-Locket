@@ -20,7 +20,7 @@ const PearlGates = () =>{
                         <h5 className="text-[#747067] font-medium text-lg">{"The Momento Urn functions like a real traditional urn but is much smaller in size. To use it, simply unscrew the top of the pearl and prepare to pour your loved one's ashes inside. Afterward, seal it with super gel glue to ensure it is secure and waterproof. Your beloved will find eternal peace in the pearly gateway to heaven."}</h5>
                         <h4 className="text-[#996D01] trajan-font font-normal text-lg">At Momento Urn, we understand that no one can live forever, but the memories they leave behind can live on forever inside Momento Urn.</h4>
                         <div>
-                            <button className="btn-submit">Shop Now</button>
+                            <button className="btn-shake">Shop Now</button>
                         </div>
                     </div>
                 </div>

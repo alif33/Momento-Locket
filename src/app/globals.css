@@ -33,61 +33,39 @@ body {
 .inter-font {
   font-family: 'Inter', sans-serif;
 }
-.input {
-  @apply border border-gray-300 text-gray-900 sm:text-sm rounded-md block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ;
-}
-.btn-submit {
-  @apply rounded-3xl bg-[#996D01] text-base font-normal text-white py-2 px-4 mx-auto;
-}
-.text-gold {
-  @apply trajan-font text-[#996D01];
-}
-.text-gradient {
-  @apply trajan-font bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 bg-clip-text text-transparent;
-}
-.link-general {
-  @apply text-base font-normal text-[#AAA599];
-}
-.link-active {
-  @apply text-base font-semibold text-[#996D01];
-}
-
 .pulse {
   border-radius: 100%;
 }
-
 .pulse:before,
 .pulse:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    border: #DBDBDB 2px solid;
-    border-radius: 100%;
-    animation: pulse 4s linear infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: #DBDBDB 2px solid;
+  border-radius: 100%;
+  animation: pulse 4s linear infinite;
 }
-
 .pulse:after{
     animation-delay: 2s;
 }
 
-
 @keyframes pulse {
   0%{
-      transform: scale(2);
+    transform: scale(2);
   }
   30%{
-      transform: scale(2.4);
-      opacity: 1;
-      border: #DBDBDB 3px solid;
+    transform: scale(2.4);
+    opacity: 1;
+    border: #DBDBDB 3px solid;
   }
   100%{
-      transform: scale(4);
-      opacity: 0;
-      border: #DBDBDB 4px solid;
+    transform: scale(4);
+    opacity: 0;
+    border: #DBDBDB 4px solid;
   }
 }
 
@@ -118,5 +96,24 @@ body {
   100% { transform: translateX(5px); }
 }
 
-/* Apply the shaking effect to the button on hover */
-
+.input {
+  @apply border border-gray-300 text-gray-900 sm:text-sm rounded-md block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ;
+}
+.btn-shake {
+  @apply bg-[#996D01] text-white text-base font-normal px-4 py-3 rounded-full shake;
+}
+.btn-submit {
+  @apply rounded-3xl bg-[#996D01] text-base font-normal text-white py-2 px-4 mx-auto;
+}
+.text-gold {
+  @apply trajan-font text-[#996D01];
+}
+.text-gradient {
+  @apply trajan-font bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 bg-clip-text text-transparent;
+}
+.link-general {
+  @apply text-base font-normal text-[#AAA599];
+}
+.link-active {
+  @apply text-base font-semibold text-[#996D01];
+}
