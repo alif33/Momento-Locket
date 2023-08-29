@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Technology = () =>{
@@ -22,21 +23,31 @@ const Technology = () =>{
                         <div className="col-span-6">
                             <h3 className="trajan-font text-[#996D01] text-2xl font-normal mb-7">Momento Jewelry App</h3>
                             <p className="text-[#7A7A7A] font-medium text-lg leading-8">Available for Android and iphone 7 or newer. Scan the QRCode  to download the Momento app.</p>
-                            <div className="flex gap-3">
-                                <div className="flex flex-col">
-                                    <Image
-                                        height={70}
-                                        width={250}
-                                        src="/img/app-store.png"
-                                        alt="app store icon"
-                                    />
-                                    <Image
-                                        height={70}
-                                        width={300}
-                                        src="/img/google-play.png"
-                                        alt="google play icon"
-                                    />
+                            <div className="flex gap-5 mt-5">
+                                <div className="flex flex-col gap-3">
+                                    <Link href="/">
+                                        <Image
+                                            height={40}
+                                            width={150}
+                                            src="/img/apple-btn.png"
+                                            alt="app store icon"
+                                        />
+                                    </Link>
+                                    <Link href="/">
+                                        <Image
+                                            height={40}
+                                            width={150}
+                                            src="/img/play-btn.png"
+                                            alt="google play icon"
+                                        />
+                                    </Link>
                                 </div>
+                                <Image
+                                    height={100}
+                                    width={100}
+                                    src="/img/qr.png"
+                                    alt="QR code"
+                                />
                             </div>
                         </div>
                    </div>

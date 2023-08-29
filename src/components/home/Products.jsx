@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from '../cards/Product';
+import { producuts } from '../../lib/data';
 
 const Products = () =>{
     return(
@@ -8,15 +9,9 @@ const Products = () =>{
                 <h1 className="text-gradient text-center trajan-font uppercase text-4xl my-3 py-5">Choose your Heavenly Pearl Gates below.</h1>
                 <h5 className="text-[#747067] text-lg font-light text-center pb-3">Buy now and get one for yourself and one for your loved one, so you can share and synchronize your photo album together</h5>
                 <div className="grid grid-cols-3 gap-12 mb-5">
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
+                    {
+                        producuts.map((item, index)=><Product key={index} img={`/img/products/${item.img}`}/>)
+                    }
                 </div>
             </div>
         </div>

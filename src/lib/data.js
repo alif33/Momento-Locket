@@ -1,3 +1,17 @@
+export const producuts = [
+    { img: "01.png" },
+    { img: "02.png" },
+    { img: "03.png" },
+    { img: "04.png" },
+    { img: "05.png" },
+    { img: "06.png" },
+    { img: "07.png" },
+    { img: "08.png" },
+    { img: "09.png" },
+    { img: "10.png" }
+    
+];
+
 export const reviews = [
     { 
         title: "“Awesome App!!! It can store loads of precious memories and voices on the cloud and the key to unlock it is the connection between the pearl and your phone“",
@@ -12,7 +26,6 @@ export const reviews = [
         img: "/img/review_3.png"  
     }
 ]; 
-
 
 export const faqs = [
     {
@@ -49,25 +62,28 @@ export const faqs = [
     }       
 ];
 
+export const list = [
+    {
+        title: "Unlimited Sharing",
+        description: "Access your memories any time as much as you want. There are no additional fees, access limitations or hidden costs.",
+        image: "/icons/Diamond.svg"
+    },
+    {
+        title: "No Batteries Needed",
+        description: "The NFC chip in your Momento® Digital urn runs without any type of battery and will work with any NFC-enabled smartphone.",
+        image: "/icons/Batteries.svg"
+    },
+    {
+        title: "Manage your Moments",
+        description: "After purchase, you can add all your special memories to your smart jewelry through this website or the Galatea Jewelry App. Available for iOS and Android.",
+        image: "/icons/Heart.svg"
+    },
+];
+
 export const links = [
-    {
-        name: "Dashboard",
-        uri: "/account"
-    },
-    {
-        name: "Orders",
-        uri: "/account/orders"
-    },
-    {
-        name: "Address",
-        uri: "/account/address"
-    },
-    {
-        name: "Account details",
-        uri: "/account/details"
-    },
-    {
-        name: "Log out",
-        uri: "/"
-    },
+    { name: "Dashboard", uri: "/account" },
+    { name: "Orders", uri: "/account/orders" },
+    { name: "Address", uri: "/account/address" },
+    { name: "Account details", uri: "/account/details" },
+    { name: "Log out", uri: "/" }
 ];
