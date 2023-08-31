@@ -15,7 +15,7 @@ export default function Address() {
                             width={436}
                             height={623}
                             src="/img/chi-huynh.jpg"
-                            className="w-full"
+                            className="w-11/12 sm:w-11/12 md:w-full"
                             alt=""
                         />
                     </div>
