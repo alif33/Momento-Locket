@@ -24,6 +24,9 @@ body {
 .bg-today{
   background-image: url('/img/bg-today.png');
 }
+.bg-sm-today{
+  background-image: url('/img/bg-sm-today.png');
+}
 .bg-product{
   background-image: url('/img/product-bg.svg');
 }
