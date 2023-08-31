@@ -15,7 +15,7 @@ export const POST = async (req, res) =>{
          const token = await genToken({_id: user._id, email: user.email});
          return NextResponse.json({
             success: true,
-            message: "loged in",
+            message: "logged in",
             token,
             user
          })

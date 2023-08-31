@@ -5,7 +5,7 @@ const PearlGates = () =>{
     return(
         <div className="w-10/12 mx-auto mt-20">
             <div className="grid grid-cols-12 gap-7">
-                <div className="col-span-5">
+                <div className="col-span-12 sm:col-span-12 md:col-span-5">
                     <Image
                         height={531}
                         width={527}
@@ -14,7 +14,7 @@ const PearlGates = () =>{
                     />
                     
                 </div>
-                <div className="col-span-7">
+                <div className="col-span-12 sm:col-span-12 md:col-span-7">
                     <div className="flex flex-col gap-8">
                         <h1 className="trajan-font text-5xl text-gradient uppercase">Heavenly Pearl Gates</h1>
                         <h5 className="text-[#747067] font-medium text-lg">{"The Momento Urn functions like a real traditional urn but is much smaller in size. To use it, simply unscrew the top of the pearl and prepare to pour your loved one's ashes inside. Afterward, seal it with super gel glue to ensure it is secure and waterproof. Your beloved will find eternal peace in the pearly gateway to heaven."}</h5>
