@@ -20,7 +20,7 @@ const Product = ({ title, img }) =>{
                     <h4 className="text-[#747067] text-lg font-light text-center py-3">$ 300.00</h4>
                     <div className="flex justify-center gap-3">
                         <button className="bg-[#74706714] px-3 py-2 rounded-full">Silver</button>
-                        <button className="bg-[#74706714] px-3 py-2 rounded-full">Yellow gGold</button>
+                        <button className="bg-[#74706714] px-3 py-2 rounded-full">Yellow Gold</button>
                         <button className="bg-[#74706714] px-3 py-2 rounded-full">White Gold</button>
                     </div>
                     <span className="mx-auto my-5">
