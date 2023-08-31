@@ -8,9 +8,9 @@ export default function Address() {
                 page={"About Us"}
                 link={"/about-us"}
             />
-            <div className=" w-7/12 mx-auto">
+            <div className="w-11/12 sm:w-11/12 md:w-7/12 mx-auto">
                 <div className="grid grid-cols-12 gap-9 py-7">
-                    <div className="col-span-7">
+                    <div className="col-span-12 sm:col-span-12 md:col-span-7">
                         <Image
                             width={436}
                             height={623}
@@ -19,7 +19,7 @@ export default function Address() {
                             alt=""
                         />
                     </div>
-                    <div className="col-span-5">
+                    <div className="col-span-12 sm:col-span-12 md:col-span-5">
                         <div className="flex flex-col gap-5">
                             <h6 className="text-[#747067] text-2xl font-semibold">Momento was invented by Chi Huynh</h6>
                             <p className="text-[#747067] font-light text-lg">an award-winning jewelry designer with over 25 years of experience in the business of jewelry ideas and creations. He has won several awards in the jewelry industry and many other accolades in other fields of invention and art.</p>
