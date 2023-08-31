@@ -19,6 +19,7 @@ const Details = () =>{
                             width={80}
                             src="/img/first.png"
                             className="cursor-pointer"
+                            onClick={()=>setSlide("/img/product-detail.png")}
                             alt="first slide"
                         />
                         <Image
@@ -26,6 +27,7 @@ const Details = () =>{
                             width={80}
                             src="/img/second.png"
                             className="cursor-pointer"
+                            onClick={()=>setSlide("/img/products/05.png")}
                             alt="second slide"
                         />
                         <Image
@@ -33,6 +35,7 @@ const Details = () =>{
                             width={80}
                             src="/img/third.png"
                             className="cursor-pointer"
+                            onClick={()=>setSlide("/img/products/07.png")}
                             alt="third"
                         />
                         <Image
@@ -40,6 +43,7 @@ const Details = () =>{
                             width={80}
                             src="/img/forth.png"
                             className="cursor-pointer"
+                            onClick={()=>setSlide("/img/products/10.png")}
                             alt="forth"
                         />
                     </div>

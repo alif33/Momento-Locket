@@ -10,7 +10,7 @@ const Reviews = () =>{
             <div className="grid grid-cols-3 gap-12">
                 {
                     reviews.map((item, index)=>(
-                        <div key={index}>
+                        <div className="col-span-3 sm:col-span-3 md:col-span-1" key={index}>
                             <h5 className=" text-[#747067] inter-font font-light text-2xl">{item.title}</h5>
                             <Card img={item.img}/>
                         </div>

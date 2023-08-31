@@ -10,7 +10,12 @@ const Products = () =>{
                 <h5 className="text-[#747067] text-lg font-light text-center pb-3">Buy now and get one for yourself and one for your loved one, so you can share and synchronize your photo album together</h5>
                 <div className="grid grid-cols-3 gap-12 mb-5">
                     {
-                        producuts.map((item, index)=><Product key={index} img={`/img/products/${item.img}`}/>)
+                        producuts.map(
+                            (item, index)=><Product 
+                                key={index}
+                                title={item.title} 
+                                img={`/img/products/${item.img}`}
+                            />)
                     }
                 </div>
             </div>

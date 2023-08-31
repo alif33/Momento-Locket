@@ -1,14 +1,14 @@
 export const producuts = [
-    { img: "01.png" },
-    { img: "02.png" },
-    { img: "03.png" },
-    { img: "04.png" },
-    { img: "05.png" },
-    { img: "06.png" },
-    { img: "07.png" },
-    { img: "08.png" },
-    { img: "09.png" },
-    { img: "10.png" }
+    { title: "URN-01", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "01.png" },
+    { title: "URN-02", description: "14kt, 10.5mm pearl & 0.21ct diamond", img: "02.png" },
+    { title: "URN-03", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "03.png" },
+    { title: "URN-04", description: "14kt, 10.5mm pearl & 0.16ct diamond", img: "04.png" },
+    { title: "URN-05", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "05.png" },
+    { title: "URN-06", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "06.png" },
+    { title: "URN-07", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "07.png" },
+    { title: "URN-08", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "08.png" },
+    { title: "URN-09", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "09.png" },
+    { title: "URN-10", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "10.png" }
     
 ];
 
