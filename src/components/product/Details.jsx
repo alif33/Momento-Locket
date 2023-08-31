@@ -13,7 +13,7 @@ const Details = () =>{
             <BreadCrumb/>
             <div className="w-11/12 mx-auto">
                 <div className="grid grid-cols-12 gap-1">
-                    <div className="col-span-1 flex flex-col gap-3">
+                    <div className="col-span-2 sm:col-span-2 md:col-span-1 flex flex-col gap-3">
                         <Image
                             height={80}
                             width={80}
@@ -47,7 +47,7 @@ const Details = () =>{
                             alt="forth"
                         />
                     </div>
-                    <div className="col-span-5">
+                    <div className="col-span-10 sm:col-span-10 md:col-span-5">
                         <Image
                             height={450}
                             width={450}
@@ -57,7 +57,7 @@ const Details = () =>{
                         />
                     </div>
                    
-                    <div className="col-span-6">
+                    <div className="col-span-12 sm:col-span-12 md:col-span-6">
                         <div className="flex gap-3">
                             <span className="text-xs font-light my-auto">Metal</span> 
                             <div className="flex gap-1 text-sm font-light">
