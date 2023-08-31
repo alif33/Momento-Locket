@@ -1,9 +1,6 @@
 import Link from "next/link";
-import authenticate from "@/lib/auth";
-import { cookies } from "next/headers";
 
-export default async function ForgetPassword(props) {
-    console.log(cookies);
+export default async function ForgetPassword() {
     return(
         <div className="flex-1">
              <div className="w-[450px] mx-auto shadow-md mt-8 bg-white rounded-lg">
@@ -23,10 +20,3 @@ export default async function ForgetPassword(props) {
         </div>
     )
 }
-
-export async function getServerSideProps() {
-  
-    return { props: {
-        name: "Ismail Hosen Alif"
-     } };
-  }
