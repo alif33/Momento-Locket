@@ -5,12 +5,15 @@ import Star from '../svg/Star';
 const Review = ({ img }) =>{
     return(
         <div className="flex gap-3 mt-5">
-            <Image
-                height={56}
-                width={56}
-                src={img}
-                alt="review author"
-            />
+            <div className="max-h-[56px] max-w-[56px]"> 
+                <Image
+                    height={56}
+                    width={56}
+                    src={img}
+                    alt="review author"
+                    layout="fixed"
+                />
+            </div>
             <div className="flex flex-col gap-1">
                 <h4>Loc Huynh</h4>
                 <span className="flex">

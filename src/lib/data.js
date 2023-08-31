@@ -9,7 +9,6 @@ export const producuts = [
     { title: "URN-08", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "08.png" },
     { title: "URN-09", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "09.png" },
     { title: "URN-10", description: "14kt, 10.5mm pearl & 0.12ct diamond", img: "10.png" }
-    
 ];
 
 export const reviews = [
