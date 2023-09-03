@@ -4,10 +4,10 @@ import Product from '../cards/Product';
 // import Http from '@/lib/Http';
 
 export default async function Products(){
-    // const res = await fetch('https://momento-locket.vercel.app/api/product/all', {
-    //     cache: 'no-cache'
-    // })
-    // const { products } = await res.json();
+    const res = await fetch('https://momento-locket.vercel.app/api/product/all', {
+        cache: 'no-cache'
+    })
+    const { products } = await res.json();
 
     return(
         <div id="products" className="bg-cover bg-product">
