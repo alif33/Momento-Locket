@@ -12,11 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-screen overflow-x-hidden flex flex-col bg-[#FBFBFB]">
-          <ReduxProvider>
+          {/* <ReduxProvider> */}
             <Header/>
               {children}
             <Footer/>
-          </ReduxProvider>
+          {/* </ReduxProvider> */}
       </body>
     </html>
   )
