@@ -4,18 +4,30 @@ import { Schema, model, models } from 'mongoose'
 const userSchema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
+  firstName: { type: String },
+  lastName: { type: String },
+  address: { type: String },
+  apartment: { type: String },
+  phone: { type: String },
+  city: { type: String },
+  country: { type: String },
+  state: { type: String },
+  zipCode: { type: String },
   password: { type: String, required: true },
 }, { timestamps: true });
 
-
-
-
-
-
-
+// Product schema
+const productSchema = new Schema({
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  image: { type: String },
+  price: { type: String },
+  qty: { type: String },
+}, { timestamps: true });
 
 // Export the models
 const User = models.User || model('User', userSchema);
+const Product = models.Product || model('Product', productSchema);
 
 
-export { User };
+export { User, Product };

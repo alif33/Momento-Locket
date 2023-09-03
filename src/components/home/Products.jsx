@@ -1,8 +1,14 @@
 import React from 'react';
 import Product from '../cards/Product';
-import { producuts } from '../../lib/data';
+// import { producuts } from '../../lib/data';
+// import Http from '@/lib/Http';
 
-const Products = () =>{
+export default async function Products(){
+    const res = await fetch('http://localhost:3000/api/product/all', {
+        cache: 'no-cache'
+    })
+    const { products } = await res.json();
+
     return(
         <div id="products" className="bg-cover bg-product">
             <div className="w-10/12 mx-auto py-3">
@@ -10,11 +16,11 @@ const Products = () =>{
                 <h5 className="text-[#747067] text-lg font-light text-center pb-3">Buy now and get one for yourself and one for your loved one, so you can share and synchronize your photo album together</h5>
                 <div className="grid grid-cols-3 gap-3 mb-5 mx-auto">
                     {
-                        producuts.map(
+                        products.map(
                             (item, index)=><Product 
                                 key={index}
                                 title={item.title} 
-                                img={`/img/products/${item.img}`}
+                                img={`/img/products/${item.image}`}
                             />)
                     }
                 </div>
@@ -23,4 +29,3 @@ const Products = () =>{
         
     )
 }
-export default Products;

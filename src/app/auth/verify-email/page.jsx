@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function VerifyEmail() {
     return(
         <div className="flex-1">
-             <div className="w-[450px] mx-auto shadow-md mt-8 bg-white rounded-lg">
+             <div className="w-11/12 sm:w-11/12 md:w-[420px] mx-auto shadow-md mt-8 bg-white rounded-lg">
                 <h1 className="text-center text-3xl uppercase py-3">Verify your email</h1>
                 <form className="space-y-3 md:space-y-4">
                     <input

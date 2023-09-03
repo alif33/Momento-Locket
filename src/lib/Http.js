@@ -15,9 +15,17 @@ const Http = async (method, endPoint, formData, token) => {
         const { data } = await api[method](endPoint, __f__, { headers });
         return data;
     } catch (error) {
-        toast.error(`${error?.response?.data?.message}`);
         return error;
     }
 };
+
+
+const Fetch = async()=>{
+  const res = await fetch('http://localhost:3000/api/product/all', {
+    cache: 'no-cache'
+  })
+  const { products } = await res.json();
+}
+
 
 export default Http;

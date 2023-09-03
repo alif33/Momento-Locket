@@ -9,7 +9,8 @@ import Pearl from '@/components/home/Pearl'
 import PearlGates from '@/components/home/PearlGates'
 import Technology from '@/components/home/Technology'
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <div>
       <Hero/>

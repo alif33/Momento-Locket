@@ -1,6 +1,6 @@
 "use client";
-import Http from "@/lib/Http";
 import Link from "next/link";
+import Http from "@/lib/Http";
 import { useForm } from "react-hook-form";
 import { Toaster, toast } from "react-hot-toast";
 
@@ -38,7 +38,7 @@ export default function SignIn() {
                 position="top-center"
                 reverseOrder={false}
             />
-             <div className="w-[450px] mx-auto shadow-md mt-20 bg-white rounded-lg">
+             <div className="w-11/12 sm:w-11/12 md:w-[420px] mx-auto shadow-md mt-20 bg-white rounded-lg">
                 <h1 className="text-gradient text-center text-2xl uppercase py-5">Sign-In</h1>
                 <form onSubmit={handleSubmit(onSubmit, onError)} className="grid grid-cols-1 gap-3 px-7">
                     <input

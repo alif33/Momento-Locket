@@ -2,10 +2,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+// import { useSelector } from 'react-redux';
 
 const Header = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // const { cart } = useSelector(state=>state);
 
   // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
@@ -24,6 +27,7 @@ const Header = () => {
     { text: 'Urns', href: '/#products' },
   ];
 
+  // console.log(cart, "cart");
   return (
     <div className="bg-[#FFFFFF] px-3 py-2 flex justify-between h-18 shadow z-10 relative">
       <div className="flex block gap-3">
@@ -88,7 +92,7 @@ const Header = () => {
         {/* Desktop Menu */}
         <ul className={`hidden md:flex flex-row gap-5 ${isMobileMenuOpen ? 'hidden' : ''}`}>
           {menuItems.map((item, index) => (
-            <li key={index}>
+            <li className="my-auto" key={index}>
               <Link href={item.href} onClick={closeMobileMenu}>
                 {item.text}
               </Link>

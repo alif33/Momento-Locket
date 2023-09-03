@@ -6,4 +6,8 @@ const getToken = async({_id, email})=>{
     });
 }
 
-export default getToken;
+const verifyToken = async token =>{
+    return jwt.verify(token, process.env.JWT_SECRET);
+}
+
+export { getToken, verifyToken };
