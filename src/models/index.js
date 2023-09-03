@@ -25,9 +25,21 @@ const productSchema = new Schema({
   qty: { type: String },
 }, { timestamps: true });
 
+// Cart schema
+const cartSchema = new Schema({
+  user: { type: Schema.Types.ObjectId, ref: "User", required: true },
+  items: [{
+    product: { type: Schema.Types.ObjectId, ref: 'Product', required: true },
+    qty: { type: Number, default: 1 }
+  }]
+  
+}, { timestamps: true });
+
+
 // Export the models
 const User = models.User || model('User', userSchema);
 const Product = models.Product || model('Product', productSchema);
+const Cart = models.Cart || model('Cart', cartSchema);
 
 
-export { User, Product };
+export { User, Product, Cart };
