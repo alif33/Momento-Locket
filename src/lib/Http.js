@@ -21,7 +21,7 @@ const Http = async (method, endPoint, formData, token) => {
 
 
 const Fetch = async()=>{
-  const res = await fetch('https://momento-locket.vercel.app/api/product/all', {
+  const res = await fetch('http://localhost:3000/api/product/all', {
     cache: 'no-cache'
   })
   const { products } = await res.json();
