@@ -4,7 +4,7 @@ import Product from '../cards/Product';
 // import Http from '@/lib/Http';
 
 export default async function Products(){
-    const res = await fetch('http://localhost:3000/api/product/all', {
+    const res = await fetch('https://momento-locket.vercel.app/api/product/all', {
         cache: 'no-cache'
     })
     const { products } = await res.json();
