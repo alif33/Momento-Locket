@@ -2,20 +2,30 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-// import { useSelector } from 'react-redux';
+import BagIcon from './BagIcon';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { cart } = useSelector(state=>state);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const [bag, setBag] = useState(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // const { cart } = useSelector(state=>state);
-
-  // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Function to close the mobile menu when a link is clicked
+
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -27,7 +37,6 @@ const Header = () => {
     { text: 'Urns', href: '/#products' },
   ];
 
-  // console.log(cart, "cart");
   return (
     <div className="bg-[#FFFFFF] px-3 py-2 flex justify-between h-18 shadow z-10 relative">
       <div className="flex block gap-3">
@@ -77,12 +86,22 @@ const Header = () => {
                 ))}
                 <li>
                   <Link href="/auth/signup">
-                    <Image width={28} height={30} src={"/icons/User.svg"} alt="man icon" />
+                    <Image 
+                      width={28} 
+                      height={30} 
+                      src={"/icons/User.svg"} 
+                      alt="man icon" 
+                    />
                   </Link>
                 </li>
-                <li>
+                <li onClick={openModal}>
                   <Link href="/">
-                    <Image width={25} height={33} src={"/icons/Bag.svg"} alt="bag icon" />
+                    <Image 
+                      width={25} 
+                      height={33} 
+                      src={"/icons/Bag.svg"} 
+                      alt="bag icon" 
+                    />
                   </Link>
                 </li>
               </ul>
@@ -98,17 +117,40 @@ const Header = () => {
               </Link>
             </li>
           ))}
-          <li>
+          <li className="my-auto">
             <Link href="/auth/signup">
-              <Image width={28} height={30} src={"/icons/User.svg"} alt="man icon" />
+              <Image 
+                width={28} 
+                height={30} 
+                src={"/icons/User.svg"} 
+                alt="man icon" 
+              />
             </Link>
           </li>
-          <li>
-            <Link href="/">
-              <Image width={25} height={33} src={"/icons/Bag.svg"} alt="bag icon" />
-            </Link>
-          </li>
+          <BagIcon bag={bag} setBag={setBag}/>
         </ul>
+        {
+          bag && (
+          <div className="absolute top-full right-5 w-[300px] bg-white z-20 shadow">
+            <h1 className="text-center text-[#747067] font-medium">Added to your bag</h1>
+              {
+                cart.items.length > 0 && cart.items.map((item, index)=>(
+                  <div key={index} className="flex">
+                  <Image width={40} height={40} src={item.image} alt={item.title} />
+                  <div className="flex flex-col">
+                    <h2>{item.title}</h2>
+                    <h5>${item.price}</h5>
+                  </div>
+                </div>
+                ))
+              }
+              <div className="flex justify-center">
+                <Link className="btn-submit" href="/shopping-cart">View Bag</Link>
+              </div>
+          </div>
+          )
+        }
+       
       </div>
     </div>
   );

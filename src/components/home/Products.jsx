@@ -19,7 +19,9 @@ export default async function Products(){
                         products.map(
                             (item, index)=><Product 
                                 key={index}
+                                _id={item._id}
                                 title={item.title} 
+                                price={item.price}
                                 img={`/img/products/${item.image}`}
                             />)
                     }

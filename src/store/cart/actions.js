@@ -1,12 +1,16 @@
 import { cartSlice } from "./slice";
 const { actions: slice } = cartSlice;
 
-export const userLogin = user => (dispatch) => {
-    dispatch(slice.userLogin(user))
+export const addToCart = __ => (dispatch) => {
+    dispatch(slice.addToCart(__));
 }
 
-export const userLogout = () => (dispatch) => {
-    dispatch(slice.userLogout())
+export const incQty = __ => (dispatch) => {
+    dispatch(slice.incQty(__));
+}
+
+export const decQty = __ => (dispatch) => {
+    dispatch(slice.decQty(__));
 }
 
 

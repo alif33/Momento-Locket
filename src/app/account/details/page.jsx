@@ -4,7 +4,7 @@ import Sidebar from "@/components/account/Sidebar";
 import Http from "@/lib/Http";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 export default function Details() {
     const {
@@ -52,10 +52,7 @@ export default function Details() {
     };
     return(
         <div className="flex-1">
-            <Toaster
-                position="top-center"
-                reverseOrder={false}
-            />
+            
             <BreadCrumb/>
             <div className="w-10/12 flex flex-row gap-7 mx-auto">
                 <Sidebar/>

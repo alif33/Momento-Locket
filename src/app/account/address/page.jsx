@@ -4,7 +4,7 @@ import Sidebar from "@/components/account/Sidebar";
 import Http from "@/lib/Http";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 export default function Address() {
     const {
@@ -58,10 +58,6 @@ export default function Address() {
 
     return(
         <div className="flex-1 pb-20">
-            <Toaster
-                position="top-center"
-                reverseOrder={false}
-            />
             <BreadCrumb/>
             <div className="w-10/12 flex flex-row gap-7 mx-auto">
                 <Sidebar/>

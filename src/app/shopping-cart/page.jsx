@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
+import Link from "next/link";
 import Card from "@/components/cards/XLCheckout";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const ShoppingCart = () =>{
+    const { cart } = useSelector(state=>state);
     return(
         <div className="flex-1">
             <div className="grid">
@@ -19,10 +23,19 @@ const ShoppingCart = () =>{
                         />
                     </div>
                     <hr />
-                    <Card/>
-                    <Card/>
+                    {
+                        cart.items?.map(
+                            (item, index)=><Card 
+                            key={index} 
+                            _id={item._id} 
+                            title={item.title} 
+                            price={item.price} 
+                            image={item.image} 
+                            qty={item.qty}
+                        />)
+                    }
                 </div>
-                <button className="btn-submit mt-10">Proceed to Checkout</button>
+                <Link href="/checkout" className="btn-submit mt-10">Proceed to Checkout</Link>
             </div>
         </div>
     )

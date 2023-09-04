@@ -80,9 +80,9 @@ export const list = [
 ];
 
 export const links = [
-    { name: "Dashboard", uri: "/account" },
-    { name: "Orders", uri: "/account/orders" },
-    { name: "Address", uri: "/account/address" },
-    { name: "Account details", uri: "/account/details" },
-    { name: "Log out", uri: "/" }
+    { name: "Dashboard", uri: "" },
+    { name: "Orders", uri: "orders" },
+    { name: "Address", uri: "address" },
+    { name: "Account details", uri: "details" },
+    { name: "Log out", uri: "logout" }
 ];

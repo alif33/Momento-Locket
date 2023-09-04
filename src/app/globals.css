@@ -114,9 +114,6 @@ body {
 .text-gradient {
   @apply trajan-font bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 bg-clip-text text-transparent;
 }
-.link-general {
-  @apply text-base font-normal text-[#AAA599];
-}
 .link-active {
   @apply text-base font-semibold text-[#996D01];
 }
