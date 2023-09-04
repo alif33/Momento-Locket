@@ -3,6 +3,7 @@ import Link from "next/link";
 import Http from "@/lib/Http";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 export default function SignIn() {
     const {
@@ -11,7 +12,7 @@ export default function SignIn() {
         handleSubmit,
         formState: { errors },
       } = useForm();
-
+    const router = useRouter();
 
     const onError = (err) =>{
    
@@ -21,10 +22,11 @@ export default function SignIn() {
         Http('post', '/auth/login', data)
         .then(res=>{
             if(res.invalid){
-                toast.error(`${res.message}`)
+                toast.error(`${res.message}`);
             }
             if(res.success){
-                toast.success(`${res.message}`)
+                toast.success(`${res.message}`);
+                router.push("/account")
             }
         })
         .catch(err=>{
