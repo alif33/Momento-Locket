@@ -1,9 +1,10 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BagIcon from './BagIcon';
 import { useSelector } from 'react-redux';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
 
@@ -17,6 +18,7 @@ const Header = () => {
     setIsModalOpen(false);
   };
 
+  const pathname = usePathname();
 
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,6 +27,9 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(()=>{
+    setBag(false);
+  }, [pathname])
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
@@ -36,6 +41,9 @@ const Header = () => {
     { text: 'About Us', href: '/about-us' },
     { text: 'Urns', href: '/#products' },
   ];
+
+
+  console.log(cart);
 
   return (
     <div className="bg-[#FFFFFF] px-3 py-2 flex justify-between h-18 shadow z-10 relative">
@@ -132,19 +140,19 @@ const Header = () => {
         {
           bag && (
           <div className="absolute top-full right-5 w-[300px] bg-white z-20 shadow">
-            <h1 className="text-center text-[#747067] font-medium">Added to your bag</h1>
+            <h1 className="text-center text-[#747067] font-medium my-2">Added to your bag</h1>
               {
                 cart.items.length > 0 && cart.items.map((item, index)=>(
-                  <div key={index} className="flex">
-                  <Image width={40} height={40} src={item.image} alt={item.title} />
-                  <div className="flex flex-col">
-                    <h2>{item.title}</h2>
-                    <h5>${item.price}</h5>
-                  </div>
-                </div>
+                  <Link href={`/product/${item.title}`} key={index} className="flex gap-2 bg-[#F5F5F5] p-2 m-2">
+                    <Image width={80} height={80} src={item.image} alt={item.title} />
+                    <div className="flex flex-col ">
+                      <h2 className="text-base font-medium mt-2">{item.title}</h2>
+                      <h5 className="text-sm font-light mt-2">${item.price}</h5>
+                    </div>
+                  </Link>
                 ))
               }
-              <div className="flex justify-center">
+              <div className="flex justify-center my-2">
                 <Link className="btn-submit" href="/shopping-cart">View Bag</Link>
               </div>
           </div>

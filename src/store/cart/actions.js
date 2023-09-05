@@ -13,4 +13,12 @@ export const decQty = __ => (dispatch) => {
     dispatch(slice.decQty(__));
 }
 
+export const applyCoupon = __ => (dispatch) => {
+    dispatch(slice.applyCoupon(__));
+}
+
+export const removeCoupon = () => (dispatch) => {
+    dispatch(slice.removeCoupon());
+}
+
 

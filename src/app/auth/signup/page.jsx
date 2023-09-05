@@ -1,10 +1,13 @@
 "use client";
+import { useState } from "react";
 import Http from "@/lib/Http";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
+import Image from "next/image";
 
 export default function SignUp() {
+    const [hide, setHide] = useState(true);
     const {
         register,
         reset,
@@ -51,21 +54,33 @@ export default function SignUp() {
                             required: "Username required",
                         })}
                     />
+                    <span className="relative">
+                        <input
+                            type={`${hide? "password": "text"}`}
+                            className="input min-w-full"
+                            placeholder="Password"
+                            {...register("password", {
+                                required: "password required",
+                            })}
+                        />
+                        <span onClick={()=>setHide(!hide)} className="top-3 right-3 absolute cursor-pointer">
+                            <Image
+                                width={20}
+                                height={20}
+                                src="/icons/hidden.svg"
+                                alt="encryption icons"
+                            />
+                        </span>
+                    </span>
                     <input
-                        className="input"
-                        placeholder="Password"
-                        {...register("password", {
-                            required: "Username required",
-                        })}
-                    />
-                    <input
+                        type={`${hide? "password": "text"}`}
                         className="input"
                         placeholder="Confirm Password"
                         {...register("confirmPassword", {
                             required: "Username required",
                         })}
                     />
-                    <div className="flex items-center mb-4">
+                    <div className="flex items-center mb-3">
                         <input 
                             id="default-checkbox" 
                             type="checkbox" 
@@ -78,7 +93,7 @@ export default function SignUp() {
                             I agree to the <span className="underline cursor-pointer">Galatea Terms of Service.</span>
                         </label>
                     </div>
-                    <div className="flex justify-center pb-3">
+                    <div className="flex justify-center pb-5">
                         <button className=" btn-submit">Sign Up</button>
                     </div>
                 </form>

@@ -4,6 +4,7 @@ export const cartSlice = createSlice({
     name: "cart",
     initialState: {
         items: [],
+        coupon: null
     },
     reducers: {
         addToCart: (state, action) => {
@@ -34,6 +35,14 @@ export const cartSlice = createSlice({
                     state.items = state.items.filter(__ => __._id !== _id);
                 }
             }
+        },
+
+        applyCoupon: (state, action) => {
+            state.coupon = action.payload;
+        },
+        
+        removeCoupon: (state, action) => {
+            state.coupon = null;
         },
     }
 })

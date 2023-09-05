@@ -1,11 +1,14 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Http from "@/lib/Http";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function SignIn() {
+    const [hide, setHide] = useState(true);
     const {
         register,
         reset,
@@ -46,13 +49,24 @@ export default function SignIn() {
                             required: "Email required",
                         })}
                     />
-                    <input
-                        className="input"
-                        placeholder="Password"
-                        {...register("password", {
-                            required: "password required",
-                        })}
-                    />
+                    <span className="relative">
+                        <input
+                            type={`${hide? "password": "text"}`}
+                            className="input min-w-full"
+                            placeholder="Password"
+                            {...register("password", {
+                                required: "password required",
+                            })}
+                        />
+                        <span onClick={()=>setHide(!hide)} className="top-3 right-3 absolute cursor-pointer">
+                            <Image
+                                width={20}
+                                height={20}
+                                src="/icons/hidden.svg"
+                                alt="encryption icons"
+                            />
+                        </span>
+                    </span>
                     <div className="flex justify-center">
                         <button className="btn-submit">Sign In</button>
                     </div>

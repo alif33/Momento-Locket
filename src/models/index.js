@@ -35,11 +35,17 @@ const cartSchema = new Schema({
   
 }, { timestamps: true });
 
+// Coupon schema
+const couponSchema = new Schema({
+  code: { type: String, required: true, unique: true },
+  couponType: { type: String, enum: ['flat', 'percentage'], required: true },
+  discountAmount: { type: Number, required: true },
+}, { timestamps: true });
 
 // Export the models
 const User = models.User || model('User', userSchema);
 const Product = models.Product || model('Product', productSchema);
 const Cart = models.Cart || model('Cart', cartSchema);
+const Coupon = models.Coupon || model('Coupon', couponSchema);
 
-
-export { User, Product, Cart };
+export { User, Product, Cart, Coupon };
