@@ -17,13 +17,13 @@ export default async function Products(){
                 <div className="grid grid-cols-3 gap-3 mb-5 mx-auto">
                     {
                         products.map(
-                            (item, index)=><Product 
-                                key={index}
-                                _id={item._id}
-                                title={item.title} 
-                                price={item.price}
-                                img={`/img/products/${item.image}`}
-                            />)
+                        (item, index)=><Product 
+                            key={index}
+                            _id={item._id}
+                            title={item.title} 
+                            price={item.price}
+                            img={`/img/products/${item.image}`}
+                        />)
                     }
                 </div>
             </div>
