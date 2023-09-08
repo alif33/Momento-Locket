@@ -46,7 +46,6 @@ export const POST = async (req, res) =>{
             product
         })
     }
-
    } catch (error) {
       console.log(error)
    }
