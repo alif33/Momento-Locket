@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Circle from '@/components/svg/Circle';
 import AddToBag from '../button/AddToBag';
 
-const Product = ({ _id, price, title, img }) =>{
+const Product = ({ _id, link, price, title, img }) =>{
     return(
         <div className="col-span-3 sm:col-span-3 md:col-span-1 mx:auto bg-white shadow">
-            <Link href={`/product/${title}`}>
+            <Link href={link}>
                 <Image
                     height={436}
                     width={381}
@@ -17,7 +17,7 @@ const Product = ({ _id, price, title, img }) =>{
                 />
             </Link>
             <div className="flex flex-col justify-center pt-5">
-                <Link href={`product/${title}`}><h3 className="text-[#747067] text-center text-base font-medium">{title? title: "Momento® Urn"}</h3></Link>
+                <Link href={link}><h3 className="text-[#747067] text-center text-base font-medium">{title? title: "Momento® Urn"}</h3></Link>
                 <h4 className="text-[#747067] text-lg font-light text-center py-3">$ {price}</h4>
                 <div className="flex justify-center gap-3">
                     <button className="bg-[#74706714] px-3 py-2 rounded-full">Silver</button>

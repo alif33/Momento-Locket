@@ -20,6 +20,7 @@ export default async function Products(){
                         (item, index)=><Product 
                             key={index}
                             _id={item._id}
+                            link={`/product/${item.title}`}
                             title={item.title} 
                             price={item.price}
                             img={`/img/products/${item.image}`}

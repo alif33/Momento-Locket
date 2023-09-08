@@ -13,6 +13,7 @@ const Products = ({ products, params: { title } }) =>{
                             return  <Product
                                 key={index}
                                 _id={item._id}
+                                link={`/product/${item.title}`}
                                 title={item.title}
                                 price={item.price}
                                 img={`/img/products/${item.image}`}
