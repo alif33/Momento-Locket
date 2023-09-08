@@ -1,9 +1,10 @@
 import React from 'react';
-import BreadCrumb from '../BreadCrumb';
+import BreadCrumb from '../../BreadCrumb';
 import Image from 'next/image';
 import Circle from '@/components/svg/Circle';
-import Slide from './Slide';
+import Slide from '../Slide';
 import { list } from '@/lib/data';
+import BagOption from './BagOption';
 
 const Details = ({products, params: { title }}) =>{
 
@@ -35,31 +36,22 @@ const Details = ({products, params: { title }}) =>{
                             <span className="text-[#747067] text-xl font-medium">$ 300</span>
                         </div>
                         <hr/>
-                        <div className="flex justify-between py-3">
-                            <div className="my-auto">
-                                <span className="text-xs font-light">Quantity:</span> 
-                                <span>
-
-                                </span>
-                            </div>
-                            <button className="btn-submit">
-                                Add to Bag
-                            </button>
-                        </div>
+                        <BagOption products={products}/>
                         <hr/>
-                        <button className="btn-submit my-5">
-                            <span className="float-left">
+                        <div className="mt-5">
+                            <span className="rounded-3xl bg-[#996D01] text-base font-normal text-white py-3 px-4 mx-auto">
                                 <Image
                                     height={30}
                                     width={30}
                                     src="/icons/upload.svg"
+                                    className="inline-block"
                                     alt="upload icon"
                                 />
-                            </span>
-                            <span className="pt-2">UPLOAD YOUR FILE & ORDER NOW</span>
-                        </button>
-                        <div className="flex gap-5 py-5">
-                            <span className="text-[#996D01] text-2xl font-bold">Not now.</span>
+                                <span className="py-5 my-auto">UPLOAD YOUR FILE & ORDER NOW</span>
+                            </span>                            
+                        </div>
+                        <div className="py-5">
+                            <span className="text-[#996D01] text-2xl font-bold mr-3">Not now.</span>
                             <span className="text-[#996D01] text-base font-medium my-auto">I you can upload photos when reciving the urn</span>
                         </div>
                         <hr/>
