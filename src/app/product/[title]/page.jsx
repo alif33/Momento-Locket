@@ -11,7 +11,7 @@ export default async function Product({ params }) {
 
   return (
     <div>
-        <Details/>
+        <Details products={products} params={params}/>
         <Collection products={products} params={params} />
         <Products products={products} params={params} />
     </div>

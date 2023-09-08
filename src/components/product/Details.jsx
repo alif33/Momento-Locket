@@ -1,62 +1,22 @@
-"use client"
-import React, { useState } from 'react';
+import React from 'react';
 import BreadCrumb from '../BreadCrumb';
 import Image from 'next/image';
 import Circle from '@/components/svg/Circle';
+import Slide from './Slide';
 import { list } from '@/lib/data';
 
-const Details = () =>{
-    const [slide, setSlide] = useState("/img/product-detail.png");
+const Details = ({products, params: { title }}) =>{
 
     return(
         <div>
-            <BreadCrumb/>
+            <BreadCrumb
+                page={title}
+                link={"/#products"}
+                linkTxt={"Urns"}
+            />
             <div className="w-9/12 mx-auto">
                 <div className="grid grid-cols-12 gap-1">
-                    <div className="col-span-2 sm:col-span-2 md:col-span-1 flex flex-col gap-3">
-                        <Image
-                            height={50}
-                            width={50}
-                            src="/img/first.png"
-                            className="cursor-pointer"
-                            onClick={()=>setSlide("/img/product-detail.png")}
-                            alt="first slide"
-                        />
-                        <Image
-                            height={50}
-                            width={50}
-                            src="/img/second.png"
-                            className="cursor-pointer"
-                            onClick={()=>setSlide("/img/products/05.png")}
-                            alt="second slide"
-                        />
-                        <Image
-                            height={50}
-                            width={50}
-                            src="/img/third.png"
-                            className="cursor-pointer"
-                            onClick={()=>setSlide("/img/products/07.png")}
-                            alt="third"
-                        />
-                        <Image
-                            height={50}
-                            width={50}
-                            src="/img/forth.png"
-                            className="cursor-pointer"
-                            onClick={()=>setSlide("/img/products/10.png")}
-                            alt="forth"
-                        />
-                    </div>
-                    <div className="col-span-10 sm:col-span-10 md:col-span-5">
-                        <Image
-                            height={400}
-                            width={400}
-                            src={slide}
-                            className="block"
-                            alt="detail product"
-                        />
-                    </div>
-                   
+                    <Slide/>
                     <div className="col-span-12 sm:col-span-12 md:col-span-6">
                         <div className="flex gap-3">
                             <span className="text-xs font-light my-auto">Metal</span> 

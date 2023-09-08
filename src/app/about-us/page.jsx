@@ -7,6 +7,7 @@ export default function Address() {
             <BreadCrumb
                 page={"About Us"}
                 link={"/about-us"}
+                linkTxt={"About Us"}
             />
             <div className="w-11/12 sm:w-11/12 md:w-7/12 mx-auto">
                 <div className="grid grid-cols-12 gap-9 py-7">
