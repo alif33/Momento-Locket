@@ -7,7 +7,7 @@ import AddToBag from '../button/AddToBag';
 const Product = ({ _id, price, title, img }) =>{
     return(
         <div className="col-span-3 sm:col-span-3 md:col-span-1 mx:auto bg-white shadow">
-            <Link href={`product/${title}`}>
+            <Link href={`/product/${title}`}>
                 <Image
                     height={436}
                     width={381}
