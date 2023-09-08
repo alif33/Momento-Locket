@@ -11,36 +11,36 @@ const Details = () =>{
     return(
         <div>
             <BreadCrumb/>
-            <div className="w-11/12 mx-auto">
+            <div className="w-9/12 mx-auto">
                 <div className="grid grid-cols-12 gap-1">
                     <div className="col-span-2 sm:col-span-2 md:col-span-1 flex flex-col gap-3">
                         <Image
-                            height={80}
-                            width={80}
+                            height={50}
+                            width={50}
                             src="/img/first.png"
                             className="cursor-pointer"
                             onClick={()=>setSlide("/img/product-detail.png")}
                             alt="first slide"
                         />
                         <Image
-                            height={80}
-                            width={80}
+                            height={50}
+                            width={50}
                             src="/img/second.png"
                             className="cursor-pointer"
                             onClick={()=>setSlide("/img/products/05.png")}
                             alt="second slide"
                         />
                         <Image
-                            height={80}
-                            width={80}
+                            height={50}
+                            width={50}
                             src="/img/third.png"
                             className="cursor-pointer"
                             onClick={()=>setSlide("/img/products/07.png")}
                             alt="third"
                         />
                         <Image
-                            height={80}
-                            width={80}
+                            height={50}
+                            width={50}
                             src="/img/forth.png"
                             className="cursor-pointer"
                             onClick={()=>setSlide("/img/products/10.png")}
@@ -49,10 +49,10 @@ const Details = () =>{
                     </div>
                     <div className="col-span-10 sm:col-span-10 md:col-span-5">
                         <Image
-                            height={450}
-                            width={450}
+                            height={400}
+                            width={400}
                             src={slide}
-                            className="block h-screen"
+                            className="block"
                             alt="detail product"
                         />
                     </div>

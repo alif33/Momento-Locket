@@ -9,11 +9,6 @@ export default async function Product({ params }) {
     })
     const { products } = await res.json();
 
-  // const res = await fetch(`https://momento-locket.vercel.app/api/product?title=${params.title}`, {
-  //   cache: 'no-cache'
-  // })
-  // const { product } = await res.json();
-  
   return (
     <div>
         <Details/>
