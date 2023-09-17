@@ -1,6 +1,7 @@
 import Collection from "@/components/product/Collection";
 import Details from "@/components/product/Details";
 import Products from "@/components/product/Products";
+import Image from "next/image";
 
 export default async function Product({ params }) {
 

@@ -42,10 +42,32 @@ const couponSchema = new Schema({
   discountAmount: { type: Number, required: true },
 }, { timestamps: true });
 
+
+const orderSchema = new Schema({
+  firstName: { type: String },
+  lastName: { type: String },
+  email: { type: String, required: true },
+  phone: { type: String, required: true },
+  address: { type: String, required: true },
+  apartment: { type: String, required: true },
+  city: { type: String, required: true },
+  country: { type: String, required: true },
+  zipCode: { type: String, required: true },
+  products: [{
+    item: { type: Schema.Types.ObjectId, ref: 'Product',  required: true },
+    qty: { type: Number, required: true }
+  }],
+  total: { type: Number, required: true },
+  subTotal: { type: Number, required: true },
+  shipping: { type: Number, required: true }
+}, { timestamps: true });
+
+
 // Export the models
 const User = models.User || model('User', userSchema);
 const Product = models.Product || model('Product', productSchema);
 const Cart = models.Cart || model('Cart', cartSchema);
 const Coupon = models.Coupon || model('Coupon', couponSchema);
+const Order = models.Order || model('Order', orderSchema);
 
-export { User, Product, Cart, Coupon };
+export { User, Product, Cart, Coupon, Order };

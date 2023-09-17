@@ -24,6 +24,7 @@ export const POST = async (req, res) =>{
             expiresIn: "1d",
             // httpOnly: false
          })
+         
          return response;
 
       }else{

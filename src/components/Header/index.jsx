@@ -42,12 +42,9 @@ const Header = () => {
     { text: 'Urns', href: '/#products' },
   ];
 
-
-  console.log(cart);
-
   return (
-    <div className="bg-[#FFFFFF] px-3 py-2 flex justify-between h-18 shadow z-10 relative">
-      <div className="flex block gap-3">
+    <div className="bg-[#FFFFFF] px-3 py-2 flex justify-between h-18 shadow relative">
+      <div className="flex gap-3">
         <Link className="flex" href="/">
           <Image width={200} height={45} src={"/img/Mask Group.png"} alt="" />
           <Image width={120} height={34} src={"/img/galatea.png"} alt="" />

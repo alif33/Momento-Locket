@@ -14,13 +14,9 @@ const BagOption = ({products}) =>{
     const current = products.find(__ => __.title === params.title);
 
     const handleBag = type => {
-        if(product){
-            if (type==="inc") {
-                dispatch(incQty(product._id))
-            }else{
-                dispatch(decQty(product._id))
-            }
-        }
+        product && type==="inc"? 
+                dispatch(incQty(product._id)): 
+                    dispatch(decQty(product._id))
     }
 
     const handleAdd = ()=>{

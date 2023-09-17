@@ -21,12 +21,6 @@ body {
 .bg-pearl{
   background-image: url('/img/ghry.png');
 }
-/* .bg-today{
-  background-image: url('/img/bg-today.png');
-}
-.bg-sm-today{
-  background-image: url('/img/bg-sm-today.png');
-} */
 .bg-product{
   background-image: url('/img/product-bg.svg');
 }
@@ -36,6 +30,20 @@ body {
 .inter-font {
   font-family: 'Inter', sans-serif;
 }
+
+.gallery{
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+  -webkit-column-width: 20%;
+  -moz-column-width: 20%;
+  column-width: 20%;
+  padding: 0 12px;
+  margin-bottom: 10px !important;
+}
+
+
+/* 
 .pulse {
   border-radius: 100%;
 }
@@ -70,9 +78,9 @@ body {
     opacity: 0;
     border: #DBDBDB 4px solid;
   }
-}
+} */
 
-.move-image{
+/* .move-image{
   position: absolute;
   bottom: -18%;
   animation: moveUp 5s linear;
@@ -81,12 +89,12 @@ body {
 
 @keyframes moveUp {
   from {
-    transform: translateY(100%); /* Start from the bottom of the container */
+    transform: translateY(100%); 
   }
   to {
-    transform: translateY(0); /* Move to the top of the container */
+    transform: translateY(0); 
   }
-}
+} */
 
 .shake {
   animation: shake 2s ease-in-out infinite;
